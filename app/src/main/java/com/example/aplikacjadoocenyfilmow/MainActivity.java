@@ -1,29 +1,28 @@
 package com.example.aplikacjadoocenyfilmow;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 
-import android.annotation.SuppressLint;
 import android.widget.Spinner;
 import android.widget.EditText;
 import android.widget.Button;
-import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Switch;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import android.widget.ListView;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@SuppressLint("UseSwitchCompatOrMaterialCode")
 public class MainActivity extends AppCompatActivity {
 
     private List<Movie> movieList = new ArrayList<>();
